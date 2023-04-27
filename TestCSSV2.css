@@ -1,0 +1,637 @@
+/* Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.navbar-fix {
+  position: absolute !important;
+  top: 0;
+}
+
+#nav{
+	height: 66px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 12rem;
+  min-height: 100%;
+  color: #000;
+  background-color: #F7F7F7;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bi-info-circle{
+  padding-right: 0.3rem;
+}
+
+.bi-boxes{
+  padding-right: 0.3rem;
+}
+
+::selection {
+  background: #707172;
+  color: #fff;
+}
+::-moz-selection {
+  background: #707172;
+  color: #fff;
+}
+
+a {
+  cursor: pointer;
+  color: #707172;
+}
+
+a:hover {
+  color: inherit;
+  color: #707172;
+  opacity: .6;
+}
+
+#header {
+  display: table;
+  color: #FFF;
+  background: linear-gradient(to bottom right, #707172, #E1E1E1);
+  background-repeat: no-repeat;
+  height: 90vh;
+  z-index: -99999999999;
+}
+
+#header-sm {
+  color: #FFF;
+  background: linear-gradient(150deg, #707172 0%, #E1E1E1 85%);
+  background-repeat: no-repeat;
+  height: 18rem;
+  z-index: -99999999999;
+}
+
+#header-live {
+  color: #FFF;
+  background: linear-gradient(150deg, #707172 0%, #E1E1E1 85%);
+  background-repeat: no-repeat;
+  height: 18rem;
+  z-index: -99999999999;
+}
+
+#page-head {
+  padding-top: 7rem;
+}
+
+.page-title {
+  font-size: 40pt;
+}
+
+.page-subtitle {
+  font-size: 16pt;
+  font-weight: 400;
+  padding-top: 0.5rem;
+}
+
+.footer {
+  color: #FFF;
+    background: linear-gradient(125deg, #707172 0%, #E1E1E1 70%);
+  height: 10rem;
+  position: absolute;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footer-content {
+  position: relative;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.footer-links {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 1rem;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.footer-link:hover {
+  color: #fff;
+  opacity: .75;
+}
+
+.footer-link:focus {
+  color: #fff;
+  opacity: .5;
+}
+
+.icon {
+  max-width: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.icon:hover {
+  opacity: 0.75;
+  transition: all 0.2s ease;
+}
+
+.footer-logo {
+  max-width: 150px;
+  padding-bottom: 10px;
+}
+
+#logo-center {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.brand-logo {
+  width: auto;
+  padding-right: .5rem;
+	padding-top: 1rem;
+  margin-left: -4rem;
+}
+
+.logo {
+  margin: auto;
+  max-width: 55vw;
+}
+
+.logo-wrapper {
+  display: block;
+  position: absolute;
+  max-height: 10rem;
+  text-align: center;
+  z-index: -99;
+}
+
+.logo-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#check-img {
+  margin: auto;
+  max-width: 30%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#confirm-subtitle {
+  padding-bottom: 3rem;
+}
+
+.logo-overlay h1 {
+  font-size: 70pt;
+  font-weight: 500;
+}
+
+.logo-overlay h3 {
+  font-weight: 300;
+}
+
+.logo-overlay {
+  position: absolute;
+  z-index: 99999999999;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  max-width: 100%;
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-card {
+  padding-top: 2px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+  padding: 30px 30px 30px 30px;
+  background-color: #fff;
+}
+
+#card-info {
+  margin-top: -3rem;
+  text-align: center;
+  z-index: 99999;
+}
+
+#card-info h3 {
+  font-size: 14pt;
+  margin: auto;
+  margin-top: 0.75rem;
+
+}
+
+.thumbnail-card {
+  background-color: #fff;
+  border-radius: 0px;
+  border-color: transparent;
+  max-width: 100%;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.faq-card {
+  background-color: #fff;
+  border-top: 3px solid #333399;
+  border-radius: 0px;
+  padding: 20px 20px 10px 20px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.faq-title {
+  font-weight: 600;
+
+}
+
+.signup-card {
+  background-color: #fff;
+  border-radius: 0px;
+  padding: 30px 30px 20px 30px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.signup-title {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#bottom-signup {
+  padding-top: 1rem;
+}
+
+#codeofconduct {
+  padding-top: 1rem;
+}
+
+.card-text {
+  color: #9a9a9a;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-subtitle {
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.card-details {
+  padding: 20px 20px 20px 20px;
+  text-align: left !important;
+}
+
+.img-card {
+  max-width: 100%;
+}
+
+.section-heading {
+  display: inline-block;
+  font-size: 22pt;
+  padding-bottom: 13px;
+  font-weight: 600;
+}
+
+.heading-separator {
+  display: block;
+  width: 100px;
+  border-top: 2px solid #d9d9d9;
+  padding-bottom: 1rem;
+}
+
+.img-standalone {
+  width: 100%;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+}
+
+.img-standalone-wide {
+  width: 100%;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+}
+
+.btn-extend {
+  width: 15rem;
+}
+
+.btn-three {
+  color: #0191f0 !important;
+  background-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: #0191f0 !important;
+  font-weight: 500 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14pt;
+  max-width: 100%;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+  
+
+}
+
+.btn-three:hover {
+  color: #000000 !important;
+  background-color: rgba(11, 197, 230, 0.5);
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+
+}
+
+.nav-pills .nav-link {
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 14pt;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+    color: #000;
+    display: inline-block;
+    cursor: default;
+    background-color: transparent;
+    border-radius: 0px;
+    border-bottom: 3px solid #5855D6;
+
+}
+
+.tab-content {
+  padding-top: 3rem;
+}
+
+
+/* Navbar */
+.nav-link {
+  font-weight: 500;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-text {
+  color: #fff;
+  
+}
+
+.navbar-transparent .brand-logo {
+  content: url("1.png");
+  height: 10rem;
+
+}
+
+.navbar-transparent .navbar-nav .nav-link {
+  color: rgba(255, 255, 255);
+  border-bottom: 3.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar-transparent .nav-link,
+.navbar-transparent .nav-item:hover .nav-link {
+  font-size: 12pt;
+  color: #FFF;
+  border-bottom: 3.5px solid #FAFAFA;
+  transition: all 0.2s ease;
+}
+
+
+
+.navbar-transparent .nav-item .active {
+  border-bottom: 3.5px solid #707172 !important;
+}
+
+.navbar-transparent .dropdown-menu {
+  background-color: #FFF;
+}
+.navbar-transparent .dropdown-item {
+  color: #000;
+}
+.navbar-transparent .dropdown-item:hover,
+.navbar-transparent .dropdown-item:focus {
+  color: #333333;
+  background-color: rgba(255,255,255,.5);
+}
+
+
+.navbar-inverse .navbar-toggler {
+  margin-top: 0rem;
+  background: transparent;
+  border-color: transparent !important;
+  border-radius: 0.25rem;
+}
+
+.navbar-inverse .navbar-toggler .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-inverse .nav-link, .nav-item:hover {
+  background-image: \F61C !important;
+}
+
+/* Gradient Nav */
+.navbar-gradient {
+  background: linear-gradient(to right, #707172, #E1E1E1);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 3.5px solid transparent;
+}
+
+.navbar-gradient .navbar-brand,
+.navbar-gradient .navbar-text {
+  color: #fff;
+}
+
+.navbar-gradient .brand-logo {
+  content: url("1.png");
+  height: 4rem;
+}
+
+.navbar-gradient .navbar-nav .nav-link {
+  color: rgba(255, 255, 255) !important;
+  border-bottom: 3.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar-gradient .nav-link,
+.navbar-gradient .nav-item:hover .nav-link {
+  font-size: 12pt;
+  color: #FFF;
+  border-bottom: 3.5px solid #FAFAFA;
+  transition: all 0.2s ease;
+}
+
+.navbar-gradient .nav-item .active {
+  border-bottom: 3.5px solid #fff !important;
+}
+
+.navbar-gradient .dropdown-menu {
+  background-color: #FFF;
+}
+.navbar-gradient .dropdown-item {
+  color: #000;
+}
+.navbar-gradient .dropdown-item:hover,
+.navbar-gradient .dropdown-item:focus {
+  color: #333333;
+  background-color: rgba(255,255,255,.5);
+}
+
+
+/* Default Nav */
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar-default {
+  visibility: visible;
+  background-color: #fff !important;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-text, .navbar-default .navbar-brand:hover .navbar-brand:focus {
+  color: #707172;
+  font-weight: 500;
+
+}
+
+.navbar-default .brand-logo {
+  content: url("1.png")
+}
+
+.navbar-default .navbar-nav .nav-link {
+  color: rgb(17, 17, 17);
+  border-bottom: 3.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar-default .nav-link,
+.navbar-default .nav-item:hover .nav-link {
+  font-size: 12pt;
+  color: rgb(17, 17, 17);
+  border-bottom: 3.5px solid rgb(130, 130, 130);
+  transition: all 0.2s ease;
+}
+
+.navbar-default .nav-item .active {
+  color: #707172 !important;
+  border-bottom: 3.5px solid #707172 !important;
+}
+
+.navbar-default .dropdown-menu {
+  background-color: #FFF;
+}
+.navbar-default .dropdown-item {
+  color: #000;
+}
+.navbar-default .dropdown-item:hover,
+.navbar-default .dropdown-item:focus {
+  color: #333333;
+  background-color: rgba(255,255,255,.5);
+}
+
+.navbar-light .navbar-toggler .icon-bar {
+  background-color: #888;
+}
+
+.navbar-light .navbar-toggler {
+  margin-top: 0rem;
+  background: transparent;
+  border-color: transparent !important;
+  border-radius: 0.25rem;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    padding-left: 0rem;
+  }
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggler {
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+

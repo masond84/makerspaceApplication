@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page V2</title>
+<link href="TestCSSV2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="cardtest.css" rel="stylesheet" type="text/css">
+<script src="cardtest.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body data-spy="scroll" data-target="#nav" data-offset="80">
+      <nav class="navbar navbar-expand-lg navbar-toggleable-sm fixed-top navbar-transparent navbar-inverse navbar-fix" id="nav">
+        <div class="container">
+        <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+          <a class="navbar-brand mr-auto" href="#"><img class="brand-logo"></a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#info">
+                    <span class="icon">
+                      <i class="bi bi-info-circle"></i>
+                    <span>
+                    <span class="text">Info</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipment">
+                  <span class="icon">
+                    <i class="bi bi-boxes"></i>
+                  <span>
+                  <span class="text">Equipment</span>
+                </a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#login">
+                    <span class="icon">
+                      <i class="bi bi-box-arrow-in-right"></i>
+                    </span>
+                    <span class="text">Login</span>
+                  </a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid" id="header" align="center">
+        <div class="logo-container">
+          <img src="logo_transparent.png" class="logo">
+        </div>
+      </div>
+
+      <div class="container section" id="info">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="section-heading">The Unviversity of Tampa's Maker's Space</h3>
+              <span class="heading-separator"></span>
+              <p>Inserting Description about the Maker's Space. It is really cool. I just need to see the layout of this spacing with the medium and large columns. I just want to make sure that eveything looks good cause I really don't want to fix this anymore besides these sentence.</p>
+            </div>
+            <div class="col-sm-6 col-md-6 col-md-offset-0">
+              <img src="1.png" class="img-standalone" id="desktop-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container section" id="equipment">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="section-heading">Equipment</h3>
+              <span class="heading-separator"></span>
+            </div>
+            <button onclick="toggleTheme()" class="themer"></button>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of 3D Printer">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">3D Printer</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the 3D printer. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Laser">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Laser</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the laser. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Milling Machine">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Milling Machine</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Milling Machine. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Soldering Iron">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Soldering Iron</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Soldering Iron. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Waveform Generator">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Waveform Generator</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Waveform Generator. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Multimeter">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Multimeter</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Multimeter. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Oscilloscope">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Oscilloscope</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Oscilloscope. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Power Supply">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Power Supply</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Power Supply. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Desktop Forming Vacumm Machine">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Desktop Forming Vacumm Machine</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Desktop Forming Vacumm Machine. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Roland Vinyl Cutter">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Roland Vinyl Cutter</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Roland Vinyl Cutter. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of Power Press">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">Power Press</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the Power Press. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="profile" onclick="expand(this)">
+                  <div class="profile__banner" style="background-color: transparent;"></div>
+                  <div>
+                      <div class="profile__pic">
+                          <img src="logo.png" alt="Profile picture of HP DesignJet">
+                      </div>
+                      <div class="profile__info">
+                          <span class="profile__info-display">HP DesignJet</span>
+                      </div>
+                  </div>
+                  <div class="profile__data">
+                      <span class="profile__data-following">
+                          <span class="profile__data-following-number">This is the HP DesignJet. It is used for various certain things. Blah blah blah. Try to insert documentation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="container section" id="login">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="section-heading">Login</h3>
+                <span class="heading-separator"></span>
+              </div>
+            </div>
+            <div class="signup-card" align="center">
+              <img src="1.png" width="250px">
+              <br>
+              <br>
+              <h3 class="signup-title">Want to Use the Maker's Space</h3>
+              <p>
+                <a class="btn btn-three btn-extend">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class = "footer">
+          <div class="container footer-content">
+            <div class ="col-sm-6">
+              <p>© The University of Tampa</p>
+            </div>
+            <div class ="col-sm-6">
+              <div class="footer-link">
+                <div id="social-icons" class="animated">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+     
+
+    <!-- nav scrolled JS-->
+    <script src="js/navbar.js"></script>
+	  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+
+
+
+
+</html>

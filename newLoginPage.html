@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link href="loginPage.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/css/bootstrap.css">
+<link rel="stylesheet" href="css/scss/bootstrap.scss">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body data-spy="scroll" data-target="#nav" data-offset="80">
+    <nav class="navbar navbar-expand-lg navbar-toggleable-sm fixed-top navbar-transparent navbar-inverse navbar-fix" id="nav">
+      <div class="container">
+      <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+        <a class="navbar-brand mr-auto" href="#"><img class="brand-logo"></a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Test Page V2.html#info">
+                  <span class="icon">
+                    <i class="bi bi-info-circle"></i>
+                  <span>
+                  <span class="text">Info</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Test Page V2.html#equipment">
+                <span class="icon">
+                  <i class="bi bi-boxes"></i>
+                <span>
+                <span class="text">Equipment</span>
+              </a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#login">
+                  <span class="icon">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                  </span>
+                  <span class="text">Login</span>
+                </a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="header-sm">
+        <div class = "container" id="page-head">
+            <h1 class="page-title">Login</h1>
+        </div>
+    </div>
+    <form action="#" method="post">
+        {% csrf_token %}
+        {% load static %}
+        <div class="container h-100">
+            <div class="d-flex justify-content-center h-100">
+                <div class="user_card">
+                    <div class="d-flex justify-content-center">
+    
+    
+                        <h3 id="form-title">LOGIN</h3>
+                    </div>
+                    <div class="d-flex justify-content-center form_container">
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="username" placeholder="Username..." class="form-control">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                                <input type="password" name="password" placeholder="Password..." class="form-control" >
+                        </div>
+    
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <input class="btn login_btn" type="submit" value="Login">
+                        </div>    
+                    </div>
+            
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center links">
+                            Don't have an account? <a href="{% url 'register' %}" class="ml-2">Sign Up</a>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
